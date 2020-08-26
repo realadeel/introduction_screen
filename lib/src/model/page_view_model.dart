@@ -33,20 +33,5 @@ class PageViewModel {
     this.image,
     this.footer,
     this.decoration = const PageDecoration(),
-  })  : assert(
-          title != null || titleWidget != null,
-          "You must provide either title (String) or titleWidget (Widget).",
-        ),
-        assert(
-          (title == null) != (titleWidget == null),
-          "You can not provide both title and titleWidget.",
-        ),
-        assert(
-          body != null || bodyWidget != null,
-          "You must provide either body (String) or bodyWidget (Widget).",
-        ),
-        assert(
-          (body == null) != (bodyWidget == null),
-          "You can not provide both body and bodyWidget.",
-        );
+  });
 }
